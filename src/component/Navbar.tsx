@@ -1,7 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import Profile_img from "../assets/images/kowoon_profile.jpeg";
-import { AiOutlineHome } from "react-icons/ai";
+import { AiOutlineFile, AiOutlineHome } from "react-icons/ai";
+import { BsPerson, BsPhone } from "react-icons/bs";
+import { FaReact } from "react-icons/fa";
+import { FiBookOpen } from "react-icons/fi";
 
 function Navbar() {
   return (
@@ -11,15 +14,25 @@ function Navbar() {
           <img className="profileImg" alt="profile_img" src={Profile_img} />
         </div>
         <h2>KO WOON</h2>
-        <section>
-          <div>
-            {" "}
-            <AiOutlineHome /> <p>Home</p>
-          </div>
-          <p>About</p>
-          <p>Skills</p>
-          <p>Portfolio</p>
-          <p>Contact</p>
+        <section className="menuBar">
+          <p>
+            <AiOutlineHome /> Home
+          </p>
+          <p>
+            <BsPerson /> About
+          </p>
+          <p>
+            <FaReact /> Skills
+          </p>
+          <p>
+            <AiOutlineFile /> Resume
+          </p>
+          <p>
+            <FiBookOpen /> Portfolio
+          </p>
+          <p>
+            <BsPhone /> Contact
+          </p>
         </section>
       </StyledNavbar>
     </div>
@@ -30,16 +43,25 @@ export default Navbar;
 
 const StyledNavbar = styled.div`
   display: inline-block;
-  width: 18%;
+  width: 100%;
   height: 100%;
   text-align: center;
   background-color: black;
   color: white;
 
   .profileImg {
-    width: 55%;
+    width: 40%;
     border-radius: 50%;
     object-fit: cover;
-    margin: 20px 0 20px 0;
+    margin: 50px 0 20px 0;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  .menuBar {
+    font-size: 1.1em;
+    line-height: 1.9em;
+    text-align: left;
+    margin-left: 3em;
   }
 `;

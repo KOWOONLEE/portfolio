@@ -6,10 +6,8 @@ import styled from "styled-components";
 function Main() {
   return (
     <StyledMain>
-      <div className="App">
-        <Navbar />
-        <Profile />
-      </div>
+      <Navbar />
+      <Profile />
     </StyledMain>
   );
 }
@@ -17,8 +15,11 @@ function Main() {
 export default Main;
 
 const StyledMain = styled.div`
+  display: flex;
   width: 100%;
-  display: inline-block;
+  height: 100vh;
+  /* flex-direction: row; */
+  /* align-items: stretch; */
   /* flex-direction: row; */
   /* justify-content: space-between; */
 `;
