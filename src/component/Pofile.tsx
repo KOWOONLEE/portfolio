@@ -37,7 +37,7 @@ function Profile() {
           className="mainBackground"
         >
           <div className="typingName">
-            LEE KO WOON
+            <h3>LEE KO WOON</h3>
             <h3>{title}</h3>
           </div>
         </div>
@@ -79,8 +79,13 @@ const StyledProfile = styled.div`
     background-color: gray;
   } */
   .typingName {
-    /* display: flex;
-    position: relative; */
+    height: 100%;
+    background-color: gray;
+    opacity: 0.5;
+    color: white;
+    font-size: 3em;
+    /* align-items: center; */
+    /* vertical-align: cen; */
     @keyframes cursor {
       0% {
         opacity: 0;
