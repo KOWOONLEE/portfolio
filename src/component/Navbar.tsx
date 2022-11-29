@@ -43,11 +43,13 @@ export default Navbar;
 
 const StyledNavbar = styled.div`
   display: inline-block;
-  width: 100%;
+  position: fixed;
+  width: 20%;
   height: 100%;
   text-align: center;
   background-color: black;
   color: white;
+  overflow: auto;
 
   .profileImg {
     width: 40%;

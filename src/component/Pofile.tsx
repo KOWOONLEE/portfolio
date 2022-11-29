@@ -49,18 +49,20 @@ function Profile() {
 export default Profile;
 
 const StyledProfile = styled.div`
-  /* display: flex; */
-  width: 100%;
+  display: flex;
+  width: 80%;
   height: 100%;
+  margin-left: 20%;
 
   .mainBackground {
     display: inline-block;
-    position: relative;
+    /* position: fixed; */
     width: 80vw;
     height: 100vh;
     background-size: cover;
+    opacity: 0.8;
   }
-  .typing {
+  /* .typing {
     width: 100%;
     height: 100%;
     background-color: gray;
@@ -68,7 +70,7 @@ const StyledProfile = styled.div`
     color: white;
     font-size: 3em;
     font-weight: bold;
-  }
+  } */
 
   /* .mainImg {
     position: relative;
@@ -80,12 +82,9 @@ const StyledProfile = styled.div`
   } */
   .typingName {
     height: 100%;
-    background-color: gray;
-    opacity: 0.5;
-    color: white;
+    color: black;
     font-size: 3em;
-    /* align-items: center; */
-    /* vertical-align: cen; */
+
     @keyframes cursor {
       0% {
         opacity: 0;
