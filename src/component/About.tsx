@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Pdfresume from "../pages/PdfResume";
 
 function About() {
   return (
@@ -7,7 +8,7 @@ function About() {
         <section>
           <h1>About</h1>
           <h2>Front-end Developer</h2>
-          <div style={{ fontSize: "1em", lineHeight: "2vh" }}>
+          <div style={{ fontSize: "1.2em", lineHeight: "2vh" }}>
             <p>
               기존의 직무에서 벗어나 개발자라는 새로운 길을 개척하고 있는
               이고운입니다.
@@ -17,25 +18,31 @@ function About() {
           </div>
           <ul className="aboutList">
             <li>
-              <span>Name:</span> 이 고 운
+              <span>Name: </span> 이 고 운
             </li>
             <li>
-              <span>Vlog:</span> https://velog.io/@kkk5689
+              <span>Vlog: </span>
+              <a href="https://velog.io/@kkk5689">https://velog.io/@kkk5689</a>
             </li>
             <li>
-              <span>Birthday:</span> 4 April 1992
+              <span>Birthday: </span> 4 April 1992
             </li>
             <li>
-              <span>Github:</span> https://github.com/KOWOONLEE{" "}
+              <span>Github: </span>
+              <a href="https://github.com/KOWOONLEE">
+                https://github.com/KOWOONLEE
+              </a>
             </li>
             <li>
-              <span>Resume:</span> Notion Resume
+              <span>Resume:</span> PDF Resume``
             </li>
           </ul>
         </section>
         <section>
           <h1>Skills</h1>
-          <p>현재까지 배우고 사용했던 기술입니다.</p>
+          <p style={{ fontSize: "1.2em", lineHeight: "2vh" }}>
+            현재까지 배우고 사용했던 기술입니다.
+          </p>
           <table>
             <tr>
               <th>Language</th>
@@ -79,6 +86,7 @@ function About() {
             </div>
           </div>
         </section>
+        <Pdfresume />
       </StyledAbout>
     </>
   );
@@ -89,6 +97,8 @@ const StyledAbout = styled.div`
   /* position: fixed; */
   width: 80%;
   margin-left: 20%;
+  /* padding-left: 5vw; */
+
   h1 {
     font-size: 3em;
     color: #112d53;
@@ -112,6 +122,14 @@ const StyledAbout = styled.div`
     span {
       font-size: 1.1em;
       font-weight: bold;
+    }
+    a {
+      color: #3b7ea6;
+      border: none;
+      text-decoration-line: none;
+    }
+    a:hover {
+      color: #f6a7b4;
     }
   }
   .aboutList li::marker {
